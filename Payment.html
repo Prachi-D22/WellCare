@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+table.number-buttons {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table.number-buttons td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+table.number-buttons button {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+table.number-buttons button:hover {
+  background-color: #f5f5f5;
+}
+
+table.number-buttons button:active {
+  background-color: #e5e5e5;
+}
+
+table.number-buttons button:focus {
+  outline: none;
+}
+ 
+</style>
+</head>
+
+<form action="example-server.com">
+    <fieldset>
+      <legend>Payment</legend>
+      <div class="form-control">
+        <label for="accountNumber">Account Number:</label>
+        <input type="text" id="accountNumber" name="accountNumber" required />
+      </div>
+      <div class="form-control">
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" name="pin" required />
+      </div>
+      <div class="form-control">
+        <label for="paymentAmount">Payment Amount:</label>
+        <input type="number" id="paymentAmount" name="paymentAmount" required />
+      </div>
+      <table>
+        <tr>
+          <td><button>1</button></td>
+          <td><button>2</button></td>
+          <td><button>3</button></td>
+        </tr>
+        <tr>
+          <td><button>4</button></td>
+          <td><button>5</button></td>
+          <td><button>6</button></td>
+        </tr>
+        <tr>
+          <td><button>7</button></td>
+          <td><button>8</button></td>
+          <td><button>9</button></td>
+        </tr>
+        <tr>
+          <td><button>#</button></td>
+          <td><button>0</button></td>
+          <td><button>*</button></td>
+        </tr>
+      </table>
+      <button class= "btn" type="submit">Pay</button>
+    </fieldset>
+  </form>
+</html>  
